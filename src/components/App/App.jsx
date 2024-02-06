@@ -1,5 +1,8 @@
 import * as React from "react"
 
+import Login from "../Login/Login"
+import Signup from "../Signup"
+
 function App() {
   const [message, setMessage] = React.useState({})
   React.useEffect(() => {
@@ -12,7 +15,8 @@ function App() {
   return (
     <>
       <div>
-        <p>Hola Mundo!</p>
+        <Login/>
+        <Signup/>
       </div>
     </>
   )

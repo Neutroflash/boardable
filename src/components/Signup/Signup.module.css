@@ -1,0 +1,25 @@
+.signup {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 98vh;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.signupDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+}
+
+.signupInput input {
+  width: 100%;
+  padding: 0;
+}
