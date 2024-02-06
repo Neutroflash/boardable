@@ -6,20 +6,39 @@
   height: 98vh;
 }
 
+.loginTop h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  width: 320px;
+}
+
 .loginForm {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
+.loginForm a {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
 .loginDisplay {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 320px;
+}
+
+.loginInput {
+  position: relative;
+  width: 100%;
 }
 
 .loginInput input {
-    width: 100%;
-    padding: 0
+    width: 320px;
 }

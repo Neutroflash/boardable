@@ -1,12 +1,15 @@
 import * as React from "react";
 import styles from "./Signup.module.css";
 
+import logo from "../../../public/assets/Vector.svg";
+import arrow from "../../../public/assets/arrow-right.svg";
+
 const Login = () => {
   return (
     <div className={styles.signup}>  
       <form action="" className={styles.signupForm}>
         <div className={styles.signupTop}>
-            <img src="#" alt="logo-menu" />
+            <img src={logo} alt="logo-menu" />
             <h1>Welcome to Boardable</h1>
         </div>
         <div className={styles.signupDisplay}>
@@ -18,7 +21,7 @@ const Login = () => {
           </div>
           <button>Signup</button>
         </div>  
-        <a href="#">Login to your account</a>
+        <a href="#">Login to your account <img src={arrow} alt="arrow" /></a>
       </form>
     </div>
   );

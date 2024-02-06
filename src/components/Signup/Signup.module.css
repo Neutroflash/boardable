@@ -6,20 +6,39 @@
   height: 98vh;
 }
 
+.signupTop h1 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 36px;
+  width: 320px;
+}
+
 .signupForm {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
+.signupForm a {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
 .signupDisplay {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 320px;
+}
+
+.signupInput {
+  position: relative;
+  width: 100%;
 }
 
 .signupInput input {
-  width: 100%;
-  padding: 0;
+  width: 320px;
 }
