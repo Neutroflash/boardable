@@ -2,8 +2,9 @@ import * as React from "react"
 
 import "./App.module.css"
 
-import Login from "../Login/Login"
-import Signup from "../Signup"
+import Login from "../Login/index"
+import Signup from "../Signup/index"
+import Accounts from "../Accounts/index"
 
 function App() {
   const [message, setMessage] = React.useState({})
@@ -19,6 +20,7 @@ function App() {
       <div>
         <Login/>
         <Signup/>
+        <Accounts/>
       </div>
     </>
   )

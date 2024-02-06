@@ -29,10 +29,15 @@ button {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+    cursor: pointer;
 }
 
 input {
     border: 1px solid #D4D4D4;
     border-radius: 6px;
     padding: 8px 12px;
+}
+
+li {
+    list-style: none;
 }
