@@ -1,0 +1,52 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    height: 100vh;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+.sortSelect {
+    width: 155px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #D4D4D4;
+}
+
+.sortSelect option {
+    border: 1px solid #D4D4D4;
+}
+
+.form  {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 224px;
+    height: 144px;
+    background-color: #E2E8F0;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.form p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 0;
+}
+
+.footer {
+    display: flex;
+    gap: 85px;
+}
+
+.footer button {
+    width: 69px;
+    height: 36px;
+    padding: 8px 12px;
+    color: white;
+}

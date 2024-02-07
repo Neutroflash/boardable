@@ -39,6 +39,13 @@
   width: 100%;
 }
 
+.loginInput p {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 800;
+  line-height: 14px;
+}
+
 .loginInput input {
     width: 320px;
 }

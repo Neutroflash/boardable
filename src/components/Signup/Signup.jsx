@@ -14,10 +14,12 @@ const Login = () => {
         </div>
         <div className={styles.signupDisplay}>
           <div className={styles.signupInput}>
-            <input type="text" placeholder="Username" required />
+            <p>Username</p>
+            <input type="text" required />
           </div>
           <div className={styles.signupInput}>
-            <input type="password" placeholder="Password" required />
+            <p>Password</p>
+            <input type="password" required />
           </div>
           <button>Signup</button>
         </div>  

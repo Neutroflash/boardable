@@ -13,16 +13,20 @@ const Accounts = () => {
         </div>
         <div className={styles.accountsDisplay}>
           <div className={styles.accountsInput}>
-            <input type="text" placeholder="Username" required />
+            <p>Username</p>
+            <input type="text" required />
           </div>
           <div className={styles.accountsInput}>
-            <input type="text" placeholder="Name" required />
+            <p>Name</p>
+            <input type="text" required />
           </div>
           <div className={styles.accountsInput}>
-            <input type="text" placeholder="Email" required />
+            <p>Email</p>
+            <input type="text" required />
           </div>
           <div className={styles.accountsInput}>
-            <input type="password" placeholder="Password" required />
+            <p>Password</p>
+            <input type="password" required />
           </div>
           <button>Update</button>
           <button className={styles.delete}>Delete my account</button>

@@ -5,6 +5,7 @@ import "./App.module.css"
 import Login from "../Login/index"
 import Signup from "../Signup/index"
 import Accounts from "../Accounts/index"
+import Menu from "../Menu/index"
 
 function App() {
   const [message, setMessage] = React.useState({})
@@ -21,6 +22,7 @@ function App() {
         <Login/>
         <Signup/>
         <Accounts/>
+        <Menu/>
       </div>
     </>
   )
