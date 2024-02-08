@@ -1,4 +1,5 @@
 import * as React from "react"
+import Router from "../../router";
 
 import "./App.module.css"
 
@@ -11,7 +12,7 @@ function App() {
   const [message, setMessage] = React.useState({})
   React.useEffect(() => {
     fetch("http://localhost:5500")
-      .then((res) => res.json)
+      .then((res) => res.json())
       .then((data) => setMessage(data))
   })
 
@@ -19,10 +20,7 @@ function App() {
   return (
     <>
       <div>
-        <Login/>
-        <Signup/>
-        <Accounts/>
-        <Menu/>
+        <Router/>
       </div>
     </>
   )

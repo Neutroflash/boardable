@@ -1,0 +1,41 @@
+.board {
+    height: 100vh;
+}
+
+.boardItems {
+    display: flex;
+    gap: 16px;
+}
+
+.boardBox {
+    width: 1280px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.boardItems button {
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 280px;
+    height: auto;
+    background-color: #e2e8f0;
+    border-radius: 6px;
+    padding: 8px;
+  }
+  
+  .form p {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    margin-bottom: 0;
+  }

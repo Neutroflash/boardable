@@ -1,52 +1,83 @@
 .menu {
-    display: flex;
-    flex-direction: column;
-    width: 1024px;
-    height: 100vh;
-    margin: 0 auto;
-    gap: 32px;
+  display: flex;
+  flex-direction: column;
+  width: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+  gap: 32px;
 }
 
 .sortSelect {
-    width: 155px;
-    height: 40px;
-    border-radius: 6px;
-    padding: 8px 12px;
-    font-size: 14px;
-    background-color: white;
-    border: 1px solid #D4D4D4;
+  width: 155px;
+  height: 40px;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #d4d4d4;
 }
 
 .sortSelect option {
-    border: 1px solid #D4D4D4;
+  border: 1px solid #d4d4d4;
 }
 
-.form  {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 224px;
-    height: 144px;
-    background-color: #E2E8F0;
-    border-radius: 6px;
-    padding: 16px;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 224px;
+  height: 144px;
+  background-color: #e2e8f0;
+  border-radius: 6px;
+  padding: 16px;
 }
 
 .form p {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 14px;
-    margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  margin-bottom: 0;
 }
 
 .footer {
-    display: flex;
-    gap: 85px;
+  display: flex;
+  gap: 85px;
 }
 
 .footer button {
-    width: 69px;
-    height: 36px;
-    padding: 8px 12px;
-    color: white;
+  width: 69px;
+  height: 36px;
+  padding: 8px 12px;
+  color: white;
+}
+
+.cardsGroup {
+    display: flex;
+    flex-direction: row;
+    width: 1024px;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.cardContainer {
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  width: 224px;
+  height: 144px;
+  border-radius: 6px;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
 }

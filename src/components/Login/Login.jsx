@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
 
 import logo from "../../../public/assets/Vector.svg"
 import arrow from "../../../public/assets/arrow-right.svg"
@@ -23,7 +24,7 @@ const Login = () => {
           </div>
           <button>Login</button>
         </div>  
-        <a href="#">Create an account<img src={arrow} alt="arrow"/></a>
+        <Link to={"/signup"}>Create an account<img src={arrow} alt="arrow"/></Link>
       </form>
     </div>
   );

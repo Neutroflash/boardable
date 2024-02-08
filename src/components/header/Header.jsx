@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from 'react-router-dom';
 import styles from "./Header.module.css";
 
 import logo from "../../../public/assets/Vector.svg";
@@ -12,7 +13,9 @@ const Header = () => {
           Boardable
         </a>
         <li>
-          <button className={styles.myAccount}>My Account</button>
+          <Link to={"/accounts"}>
+            <button className={styles.myAccount}>My Account</button>
+          </Link>
           <button className={styles.logout}>Logout</button>
         </li>
       </ul>

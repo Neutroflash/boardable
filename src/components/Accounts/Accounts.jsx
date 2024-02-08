@@ -6,7 +6,6 @@ import styles from "./Accounts.module.css";
 const Accounts = () => {
   return (
     <div className={styles.accounts}>
-      <Header/>
       <form action="" className={styles.accountsForm}>
         <div className={styles.accountsTop}>
             <h1>My Account</h1>
