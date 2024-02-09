@@ -11,6 +11,8 @@ const Boards = () => {
   const title = searchParams.get("title");
 
   const [showMenu, setShowMenu] = useState(false);
+  const [newListTitle, setNewListTitle] = useState("");
+  const [lists, setLists] = useState([]);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -22,6 +24,21 @@ const Boards = () => {
 
   const handleDelete = () => {
     console.log("Eliminar board");
+  };
+
+  const handleCreateList = (event) => {
+    event.preventDefault();
+    if (!newListTitle.trim()) return;
+
+    const newList = {
+      title: newListTitle,
+    };
+    setLists([...lists, newList]);
+    setNewListTitle("");
+  };
+
+  const handleNewListTitleChange = (event) => {
+    setNewListTitle(event.target.value);
   };
 
   return (
@@ -41,21 +58,30 @@ const Boards = () => {
             </div>
           )}
         </div>
-        <form className={styles.form}>
+        <form onSubmit={handleCreateList} className={styles.form}>
           <input type="hidden" name="color" />
           <p>List Title</p>
           <input
             type="text"
             name="title"
+            value={newListTitle}
+            onChange={handleNewListTitleChange}
             className={styles.title}
             aria-label="title"
           />
           <div className={styles.footer}>
             <button type="submit" className={styles.button}>
-              Create
+              Create new list
             </button>
           </div>
         </form>
+        <div className={styles.listsContainer}>
+        {lists.map((list, index) => (
+          <div key={index} className={styles.list}>
+            <h2>{list.title}</h2>
+          </div>
+        ))}
+      </div>
       </div>
     </div>
   );

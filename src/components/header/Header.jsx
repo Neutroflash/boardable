@@ -8,15 +8,17 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <ul className={styles.headerItems}>
-        <a href="#">
+        <Link to={"/menu"}>
           <img src={logo} alt="logo" />
           Boardable
-        </a>
+        </Link>
         <li>
           <Link to={"/accounts"}>
             <button className={styles.myAccount}>My Account</button>
           </Link>
-          <button className={styles.logout}>Logout</button>
+          <form method="POST" action="/logout">
+            <button className={styles.logout}>Logout</button>
+          </form>
         </li>
       </ul>
     </div>
